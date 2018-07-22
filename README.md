@@ -22,7 +22,7 @@ Ver archivo Instalacion.pdf
 
 Ver archivo Documentación y Ejemplos API-Enpoint.pdf
 
-### Librerias
+### Librerias y Frameworks
 
 Marshmallow: Para realizar validaciones y la serializacion de objetos, tiene buena documentación. [is an ORM/ODM/framework-agnostic library for converting complex datatypes, such as objects, to and from native Python datatypes.]
 
