@@ -1,0 +1,20 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: bash -c "chmod a+x ./run.sh && ./run.sh"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - postgres
+    environment:
+      DB_HOST: postgres
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: ivan
+      POSTGRES_PASS: 12345678
+      POSTGRES_DB: neximo_db
